@@ -1,5 +1,7 @@
 
-
+body{
+  font-size: 24px;
+}
 
 header .group{ 
 background-color: rgb(66, 139, 202);
@@ -7,7 +9,8 @@ display: flex;
 flex-direction: column;
 font-family: Verdana;
 font-weight: 900;
-margin-top: 10px;
+margin: 0;
+padding: 0;
 text-align: center;
 }
 
@@ -26,20 +29,18 @@ header h2{
   color: rgb(1, 51, 100);
 }
 
-
 .intro{
-  margin-top: 200px;
-  margin-left: 200px;
- justify-content: center;
+  margin: 200px 35px 50px 35px;
 }
 
 article .group{
 display: flex;
 flex-direction: column;
+font-size: 18px;
 }
 
 article .item{
-  width: 350px;
+  width: 100%;
   flex: 1;
   margin: 5px;
   align-items: flex-start;
@@ -67,6 +68,7 @@ article .item{
    font-family: Helvetica;
    background-color: rgba(173, 173, 173, 0.39);
    padding: 5px;
+   margin-bottom: 100px;
 }
 
 article .group img{
@@ -76,31 +78,46 @@ article .group img{
 }
 
 p, ul{
-   line-height: 170%;
+   line-height: 150%;
 }
 
 #portfolio img{
+   display: block;
+   margin-right: 0 auto;
+   margin-bottom: 30px;
    width: 100%;
 }
 
 #portfolio{
-   text-align: center;
    font-family: sans-serif; 
-   font-size: 16px;
-   margin: 100px 20%;
+   font-size: 22px;
+   margin: 100px 15px 50px 15px;
 }
 
 #portfolio .group{
    display: flex;
    flex-direction: column;
-   width: 850px;
 }
 
 #portfolio .item{
+   width: 100%;
+   height: auto;
    flex: 1;
    margin: 10px;
-   display: block;
+  align-items: flex-start;
 }
+
+
+.contact{
+  font-family: Helvetica;
+  width: 100%;
+  margin: 20px;
+}
+
+a:link {color: darkblue;}
+a:visited {color: darkcyan;}
+a:hover {color: crimson;}
+a:active{color: green;}
 
 
 form label{
@@ -118,33 +135,21 @@ form input[type=text]{
 
 form button{
     margin-top: 20px;
-    margin-right: 10px;
     font-size: 18px;
     font-weight: 700;
     background-color: rgb(66,139, 202);
 }
 
-.contact{
-  font-family: Helvetica;
-  width: 600px;
-  margin: 50px;
-}
-
-a:link {color: darkblue;}
-a:visited {color: darkcyan;}
-a:hover {color: crimson;}
-a:active{color: green;}
-
 footer{
   font-weight: 900;
   font-size: 24px;
   color: rgb(1, 51, 100);
-  text-align: center;
   background-color: rgb(66,139, 202);
   height: 60px;
+  text-align: center;
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 601px) {
  header .group{
     flex-direction: row;
   }
@@ -152,16 +157,43 @@ footer{
     width: 250px;
     object-fit: cover;
   } 
-
+  
   header h1{
-  margin: 50px 200px;
   text-align: center;
 }
 
-  #portfolio .group {
-    flex-direction: row;
-  }
   article .group {
     flex-direction: row;
+    justify-content: center;
   }
+
+  #portfolio .group {
+    flex-direction: row;
+    justify-content: center;
+   }
+
+   article .item{
+    max-width: 300px;
+   }
+
+   #portfolio img{
+     max-width: 350px;
+   }
+
+   #portfolio .item{
+     max-width: 350px;
+   }
+
+  .contact{
+    max-width: 500px;
+    justify-content: center;
+   }
+
+   .title{
+     padding-left: 110px;
+   }
+
+   h2, h3{
+     text-align: center;
+   }
 }
