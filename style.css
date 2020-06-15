@@ -11,7 +11,7 @@ padding: 0;
 
 header img{
  max-width: auto;
- height: auto;
+
 }
 
 header .title{
@@ -147,7 +147,7 @@ footer{
   text-align: center;
 }
 
-@media all and (min-width: 801px) {
+@media all and (min-width: 601px) {
  header .group{
     flex-direction: row;
   }
@@ -193,3 +193,4 @@ footer{
      text-align: center;
    }
 }
+
