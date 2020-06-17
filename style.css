@@ -15,12 +15,12 @@ header img{
   height: 100%;
 }
 header h1{ 
-  font-size:60px;
+  font-size:70px;
   color: white;
 }
 
 header h2{
-  font-size: 30px; 
+  font-size: 50px; 
   color: rgb(1, 51, 100);
 }
 
@@ -42,7 +42,7 @@ header nav ul {
 #menu li{
   display:inline-block;
   list-style-type: none;
-  font-size: 20px;
+  font-size: 30px;
   color: rgb(1, 51, 100);
   font-weight: 900;
    padding: 0 20px 0 0;
@@ -218,6 +218,8 @@ footer{
      text-align: center;
    }
 } 
+
+
 
 
 
